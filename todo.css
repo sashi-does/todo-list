@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+.bg-container {
+    height: 100vh;
+    background-color: #edeef3;
+}
+
+.red {
+    color: red;
+}
+
+.label {
+    height: 46px;
+    width: 98%;
+    padding: 8px;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
+    color: black;
+    background-color: #FFE4E1;
+    /* FFE4E1 */
+    border-radius: 6px;
+    border-color: red;
+    border-width: 6px;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+    border-style: solid;
+}
+
+.trash {
+    padding: 5px;
+    font-size: 18px;
+    margin-left: auto;
+}
+
+.glow {
+    color: aliceblue;
+}
+
+.heading {
+    color: #f0f8ff;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+.list-container {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.caption {
+    color: #FFFFFF;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
+}
+
+.add-styles {
+    background-color: #1C2457;
+    border-width: 0px;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
+}
+
+.checkbox {
+    height: 20px;
+    width: 20px;
+    margin-top: 12px;
+    margin-right: 10px;
+}
+
+.task-completed {
+    background-color: #e6fce7;
+    border-color: green;
+    border-width: 7px;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+    border-style: solid;
+}
+
+.inner-container {
+    background-color: #070F26;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.save-button {
+    background-color: #6C72FF;
+    border-width: 0px;
+    width: 80px;
+    color: aliceblue;
+    padding: 6px;
+    border-radius: 6px;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
+}
+
+.add-button {
+    background-color: #6C72FF;
+    border-width: 0px;
+    width: 80px;
+    color: aliceblue;
+    padding: 6px;
+    border-radius: 6px;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+    position: relative;
+}
+
+.loader::after,
+.loader::before {
+    content: '';
+    box-sizing: border-box;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #FFF;
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation: animloader 1s linear infinite;
+}
+
+.loader::after {
+    animation-delay: 0s;
+}
+
+@keyframes animloader {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
